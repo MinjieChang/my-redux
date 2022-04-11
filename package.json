@@ -1,0 +1,22 @@
+{
+  "name": "my-redux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "start": "nodemon --exec node --loader ts-node/esm --experimental-modules --es-module-specifier-resolution=node ./test/index.ts",
+    "dev": "nodemon --exec ./node_modules/.bin/ts-node --esm ./test/index.ts",
+    "build": "tsc -p ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

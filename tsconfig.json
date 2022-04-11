@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ES5",
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    // "sourceMap": true,
+    "outDir": "./lib",
+    // "sourceMap": true,
+    "lib": [
+      "DOM",
+      "ES2015",
+      "ES2016",
+      "ES2017.Object",
+      "ES2018.Promise"
+    ],
+    "declaration": true,
+    "declarationDir": "lib/@types"
+  },
+  "ts-node": {
+    // Tell ts-node CLI to install the --loader automatically, explained below
+    "esm": true
+  },
+  "include": [
+    "./**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    ".vscode",
+    "test/",
+    "lib"
+  ]
+}
