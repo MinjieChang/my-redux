@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
+    "ts-node": "^10.7.0",
     "typescript": "^4.6.3"
   },
   "scripts": {
@@ -16,6 +17,7 @@
     "dev": "nodemon --exec ./node_modules/.bin/ts-node --esm ./test/index.ts",
     "build": "tsc -p ."
   },
+  "types": "./lib/@types",
   "keywords": [],
   "author": "",
   "license": "ISC"
